@@ -1,0 +1,28 @@
+@use './colors' as *;
+
+@mixin diagonal-gradient {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(
+		to right,
+		$bg-white 34%,
+		$bg-mid 34% 64%,
+		$bg-dark 64%
+	);
+	transform: rotate(20deg);
+	z-index: -1;
+
+	@media (orientation: landscape) {
+		background: linear-gradient(
+			to right,
+			$bg-white 40%,
+			$bg-mid 40% 60%,
+			$bg-dark 60%
+		);
+	}
+}
+

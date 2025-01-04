@@ -1,0 +1,58 @@
+@use '../../sass/common' as *;
+
+.home {
+	position: relative;
+	padding-top: 9em;
+	min-height: 100vh;
+	overflow: hidden;
+
+	&::before {
+		@include diagonal-gradient;
+	}
+}
+
+.wrapper  {
+	border: 2px solid green;
+}
+
+.heading {
+	position: relative;
+	font-size: 2.2em;
+	text-align: center;
+	font-weight: 900;
+	letter-spacing: 1px;
+	color: $blue;
+
+	span {
+		white-space: nowrap;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -7px;
+		left: 50%;
+		height: 3px;
+		width: 30%;
+		transform: translateX(-50%);
+		background-color: $yellow;
+	}
+}
+
+.text {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.img_cars {
+	position: absolute;
+	width: 100%;
+	max-width: 900px;
+	left: 50%;
+	bottom: 15%;
+	transform: translateX(-50%);
+}
+
+@media (orientation: landscape) and (height <= 500px) {
+
+}
