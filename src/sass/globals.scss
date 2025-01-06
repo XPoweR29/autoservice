@@ -3,9 +3,8 @@
 @use './common' as *;
 
 body {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	min-width: 320px;
-	overflow: hidden;
 	color: $dark;
 
 	@media (min-width: 400px) {

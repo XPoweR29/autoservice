@@ -1,4 +1,5 @@
 import { Header } from '@/sections/Header/Header';
+import { Offer } from '@/sections/Offer/Offer';
 import { Start } from '@/sections/Start/Start';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
 		<>
 			<Header />
 			<Start/>
+			<Offer/>
 		</>
 	);
 }

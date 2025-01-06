@@ -2,7 +2,9 @@
 
 .home {
 	position: relative;
-	padding-top: 9em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 	overflow: hidden;
 
@@ -11,8 +13,12 @@
 	}
 }
 
-.wrapper  {
-	border: 2px solid green;
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 7em;
+	padding-bottom: 3em;
 }
 
 .heading {
@@ -41,18 +47,12 @@
 
 .text {
 	margin-top: 2em;
+	max-width: 900px;
 	text-align: center;
 }
 
 .img_cars {
-	position: absolute;
-	width: 100%;
+	width: 110%;
 	max-width: 900px;
-	left: 50%;
-	bottom: 15%;
-	transform: translateX(-50%);
-}
-
-@media (orientation: landscape) and (height <= 500px) {
-
+	margin-top: 3em;
 }

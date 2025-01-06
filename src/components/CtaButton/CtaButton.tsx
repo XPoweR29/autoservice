@@ -13,7 +13,7 @@ interface Props {
 
 export const CtaButton = ({children, className, icon}: Props) => {
 	return (
-		<Link href='/#kontakt' className={`${styles.cta} ${className}`}>
+		<Link href='/#kontakt' className={`${className} ${styles.cta}`}>
 			<img src={icon} alt='ikona' />
 			{children}
 		</Link>
