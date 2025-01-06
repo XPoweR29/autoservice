@@ -1,4 +1,76 @@
+@use '../../sass/common' as *;
+
 .offer {
-    height: 100vh;
-    
+	padding: 5em 0;
+	background-image: linear-gradient(to right, $bg-white, $bg-dark);
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.heading {
+		@include heading;
+		font-size: 2em;
+		letter-spacing: normal;
+	}
+
+	.text {
+		margin-top: 3em;
+		max-width: 600px;
+	}
+
+    .flex_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+	.feature_container {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		margin-top: 3em;
+	}
+
+	.section_img {
+		width: 100%;
+        align-self: center;
+        max-width: 550px;
+		margin-top: 2em;
+        pointer-events: none;
+	}
+}
+
+@media (width >= 450px) {
+	.offer {
+		.heading {
+			text-align-last: left;
+
+			&::before {
+				left: 0;
+				transform: translateX(0);
+			}
+		}
+	}
+}
+
+@media (width >= 992px) {
+	.offer {
+		.flex_box {
+            flex-direction: row;
+			justify-content: space-between;
+			align-items: start;
+            max-width: 1110px;
+		}
+
+        .feature_container {
+            margin-top: 5em;
+        }
+
+		.section_img {
+			width: 50%;
+			margin: 0;
+            margin-right: 5em;
+		}
+	}
 }

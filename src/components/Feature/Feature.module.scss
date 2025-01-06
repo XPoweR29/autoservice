@@ -1,0 +1,10 @@
+.feature {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+    gap: 0.7em;
+
+    span {
+        font-weight: bold;
+    }
+}
