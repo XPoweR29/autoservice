@@ -1,0 +1,36 @@
+@use '../../sass/common' as *;
+
+.reviews {
+	position: relative;
+	padding: 7em 0;
+	background-image: url('../../assets/reviews_background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: $dark;
+		opacity: 0.8;
+		z-index: -1;
+	}
+
+	.heading {
+		@include subheading;
+		color: $bg-white;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+
+	.ctaBtn {
+		margin-top: 5em;
+		background-color: $bg-white;
+		margin-bottom: 0;
+	}
+}

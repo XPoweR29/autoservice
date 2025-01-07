@@ -50,3 +50,10 @@
 		background-color: $yellow;
 	}
 }
+
+@mixin subheading {
+	@include heading;
+	font-size: 2em;
+	letter-spacing: normal;
+}
+

@@ -3,16 +3,16 @@ import Image from 'next/image';
 import { Wrapper } from '@/components/Wrapper/Wrapper';
 import { Feature } from '@/components/Feature/Feature';
 
-import styles from './Offer.module.scss';
+import styles from './About.module.scss';
 
 import icon_experience from '../../assets/icons/feature_experience.svg';
 import icon_diagnostic from '../../assets/icons/feature_diagnostic.svg';
 import icon_time from '../../assets/icons/feature_fast.svg';
 import section_img from '../../assets/about_img.webp';
 
-export const Offer = () => {
+export const About = () => {
 	return (
-		<section className={styles.offer} id='oferta'>
+		<section className={styles.offer} id='o-nas'>
 			<Wrapper className={styles.wrapper}>
 				<h2 className={styles.heading}>Dlaczego warto nam zaufać?</h2>
 				<p className={styles.text}>

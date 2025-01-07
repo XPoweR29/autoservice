@@ -1,13 +1,17 @@
 import { Header } from '@/sections/Header/Header';
-import { Offer } from '@/sections/Offer/Offer';
+import { About } from '@/sections/About/About';
 import { Start } from '@/sections/Start/Start';
+import { Serivces } from '@/sections/Services/Serivces';
+import { Reviews } from '@/sections/Reviews/Reviews';
 
 export default function Home() {
 	return (
 		<>
 			<Header />
 			<Start/>
-			<Offer/>
+			<About/>
+			<Serivces/>
+			<Reviews/>
 		</>
 	);
 }
