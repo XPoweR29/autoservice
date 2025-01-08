@@ -1,22 +1,42 @@
 [
-    {
-        "author": "Michał Nowak",
-        "comment": "Długo szukałam dobrego mechanika i znalazłam. Świetni fachowcy, zawsze pomocni z szybkimi terminami. Obsługa na najwyższym poziomie. Bardzo polecam! Jak oddawać samochód to tylko tam!"
-    },
-    {
-        "author": "Michał Nowak",
-        "comment": "Długo szukałam dobrego mechanika i znalazłam. Świetni fachowcy, zawsze pomocni z szybkimi terminami. Obsługa na najwyższym poziomie. Bardzo polecam! Jak oddawać samochód to tylko tam!"
-    },
-    {
-        "author": "Michał Nowak",
-        "comment": "Długo szukałam dobrego mechanika i znalazłam. Świetni fachowcy, zawsze pomocni z szybkimi terminami. Obsługa na najwyższym poziomie. Bardzo polecam! Jak oddawać samochód to tylko tam!"
-    },
-    {
-        "author": "Michał Nowak",
-        "comment": "Długo szukałam dobrego mechanika i znalazłam. Świetni fachowcy, zawsze pomocni z szybkimi terminami. Obsługa na najwyższym poziomie. Bardzo polecam! Jak oddawać samochód to tylko tam!"
-    },
-    {
-        "author": "Michał Nowak",
-        "comment": "Długo szukałam dobrego mechanika i znalazłam. Świetni fachowcy, zawsze pomocni z szybkimi terminami. Obsługa na najwyższym poziomie. Bardzo polecam! Jak oddawać samochód to tylko tam!"
-    }
+	{
+		"author": "Mariusz Paluch",
+		"comment": "Bardzo dobry mechanik wszystko konkretnie i na temat.Polecam"
+	},
+	{
+		"author": "Klaudia Xyz",
+		"comment": "Długo szukałam dobrego mechanika i znalazłam. Świetni fachowcy, zawsze pomocni z szybkimi terminami. Obsługa na najwyższym poziomie. Bardzo polecam! Jak oddawać samochód to tylko tam!"
+	},
+	{
+		"author": "Ireneusz Waliczek",
+		"comment": "Bardzo dobry mechanik ,zawsze rzetelny i konkretny. Podejmuje się napraw tego czego inni nie ogarniają. Polecam w 100%"
+	},
+	{
+		"author": "Lic",
+		"comment": "Miła i profesjonalna obsługa. Fachowo i solidnie. Bardzo Polecam"
+	},
+	{
+		"author": "Mateusz Duc",
+		"comment": "Bardzo dobry warsztat, profesjonalna miła obsługa, prawdziwi fachowcy. Brak naciągania na zbędne koszty. Polecam"
+	},
+	{
+		"author": "Tomasz Kamiński",
+		"comment": "Bardzo solidny fachowiec. Osobiście polecam. A do tego wszystkiego miły i bezproblemowy."
+	},
+	{
+		"author": "Kasia Foks",
+		"comment": "Bardzo dobry fachowiec, miła i profesjonalna obsługa. Polecam"
+	},
+	{
+		"author": "Jan Wójcik",
+		"comment": "Fachowa robota i przystępne ceny. Na pewno wrócę przy kolejnej okazji!"
+	},
+	{
+		"author": "Sławomir Kluczny",
+		"comment": "Jestem bardzo zadowolony z tego warsztatu."
+	},
+	{
+		"author": "Ewa",
+		"comment": "Świetne podejście do klienta, wszystko dokładnie wytłumaczone. Usługa wykonana perfekcyjnie."
+	}
 ]
