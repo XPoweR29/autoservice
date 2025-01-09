@@ -57,3 +57,41 @@
 	letter-spacing: normal;
 }
 
+@mixin mainButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5em;
+	width: fit-content;
+	padding: 1em 1.5em;
+	margin: 3em auto;
+	border: 2px solid $blue;
+	color: $blue;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	box-shadow: 7px 7px 0px 0px $yellow;
+
+	img {
+		width: 1.5em;
+	}
+}
+
+@mixin divider {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	pointer-events: none;
+
+	@media(width >= 576px) {
+		height: 90px;
+	}
+
+	@media(width >= 992px) {
+		height: 120px;
+	}
+
+	@media(width >= 1400px) {
+		height: 160px;
+	}
+}

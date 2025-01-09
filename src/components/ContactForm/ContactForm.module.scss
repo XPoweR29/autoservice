@@ -1,0 +1,54 @@
+@use '../../sass/common' as *;
+
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5em;
+	width: 100%;
+	max-width: 510px;
+	padding-bottom: 1em;
+	margin-top: 5em;
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 0.7em 0.5em;
+		font-size: 1em;
+		background-color: transparent;
+		color: $bg-dark;
+		border: 2px solid $bg-dark;
+
+		&:focus {
+			outline: none;
+			box-shadow: 4px 4px 0px $yellow;
+		}
+	}
+
+	textarea {
+		height: 250px;
+	}
+
+	button {
+		@include mainButton;
+		margin-top: 2em;
+		background-color: $bg-dark;
+	}
+}
+
+@media(width >= 576px) { 
+	.form {
+		textarea {
+			height: 300px;
+		}
+	}
+}
+
+@media(width >= 992px) {
+	.form {
+		margin: 0;
+		margin-top: 5em;
+		width: 50%;
+	}
+}

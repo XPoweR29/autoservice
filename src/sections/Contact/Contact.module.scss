@@ -1,6 +1,129 @@
 @use '../../sass/common' as *;
 
 .contact {
-    height: 100vh;
-    background-color: $dark;
+	position: relative;
+	padding-top: 5em;
+	color: $bg-dark;
+	background-color: $dark;
+	overflow: hidden;
+
+	.wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+	}
+
+	.heading {
+		@include subheading;
+		max-width: 500px;
+		color: $bg-dark;
+		text-align: right;
+		margin-left: auto;
+
+		span {
+			white-space: wrap;
+			@media (width >= 450px) {
+				white-space: nowrap;
+			}
+		}
+
+		&::before {
+			left: auto;
+			right: 0;
+			transform: translateX(0);
+		}
+	}
+
+	.text {
+		margin-top: 3em;
+		text-align: right;
+		max-width: 600px;
+		align-self: end;
+	}
+
+	.flex_form-info {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+	}
+
+	.contact_info {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+		margin-top: 3em;
+	}
+
+	.item {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+        width: fit-content;
+
+		p {
+			font-weight: bold;
+		}
+	}
+
+	.divider {
+        @include divider;
+		position: relative;
+		margin-top: 3em;
+	}
+
+	.bg_tiles {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+} 
+
+@media (width >= 992px) {
+	.contact {
+		.flex_form-info {
+			flex-direction: row-reverse;
+			justify-content: space-between;
+            align-items: start;
+            gap: 2em;
+		}
+
+		.flex_info-map {
+			display: flex;
+			flex-direction: column;
+			gap: 5em;
+            flex-grow: 1;
+		}
+
+		.contact_info {
+			margin-top: 0;
+		}
+
+		.map {
+			border: 1px solid $bg-dark;
+			width: 100%;
+            max-width: 400px;
+			aspect-ratio: 1.6/1;
+		}
+
+        .bg_tiles {
+            width: 30%;
+        }
+	}
+}
+
+@media(width >= 1200px) {
+    .contact {
+        .map {
+            max-width: 450px;
+        }
+    }
+}
+
+@media(width >= 1400px) {
+    .contact {
+        .map {
+            max-width: 600px;
+        }
+    }
 }

@@ -15,6 +15,7 @@ export const MobileMenu = () => {
 		<nav
 			className={`${styles.mobileMenu} ${mobileMenuShown && styles['mobileMenu--active']}`}
             aria-hidden={!mobileMenuShown}
+            inert={!mobileMenuShown}
             aria-label='Menu główne'
         >
             <ul>
