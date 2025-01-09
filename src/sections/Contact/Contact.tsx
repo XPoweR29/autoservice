@@ -4,7 +4,6 @@ import { ContactForm } from '@/components/ContactForm/ContactForm';
 
 import styles from './Contact.module.scss';
 
-
 import divider from '../../assets/divider_footer.svg';
 import bg_tiles from '../../assets/background_tiles.svg';
 import { Map } from '@/components/Map/Map';
@@ -25,10 +24,10 @@ export const Contact = () => {
 				</p>
 
 				<div className={styles['flex_form-info']}>
-
 					<ContactForm />
-          <Info_Map/>
+					<Info_Map />
 				</div>
+				
 			</Wrapper>
 			<img src={bg_tiles.src} className={styles.bg_tiles} alt='' aria-hidden />
 			<img src={divider.src} className={styles.divider} alt='' aria-hidden />

@@ -7,7 +7,7 @@ import { BurgerBtn } from '@/components/BurgerBtn/BurgerBtn';
 import { Wrapper } from '@/components/Wrapper/Wrapper';
 
 import styles from './Header.module.scss';
-import logo_small from '../../assets/logo_small.png';
+import logo from '../../assets/logo.svg';
 import { useBreakpoints } from '@/hooks/useBreakpoint';
 import { LinkBar } from '@/components/LinkBar/LinkBar';
 import { AppContext } from '@/contexts/app.context';
@@ -21,7 +21,7 @@ export const Header = () => {
 		<header className={styles.header}>
 			<Wrapper className={styles.wrapper}>
 				<Link href='/'>
-					<Image src={logo_small} alt='logo' />
+					<Image src={logo} alt='logo' />
 				</Link>
 
 				{breakpoint.md?<LinkBar/>:<BurgerBtn className={styles.burgerBtn}/>}
