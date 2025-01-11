@@ -3,8 +3,10 @@
 .offer {
 	padding: 5em 0;
 	background-image: linear-gradient(to bottom, $bg-mid, $bg-dark);
+	overflow: hidden;
 
 	.wrapper {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 	}
@@ -20,10 +22,10 @@
 		max-width: 600px;
 	}
 
-    .flex_box {
-        display: flex;
-        flex-direction: column;
-    }
+	.flex_box {
+		display: flex;
+		flex-direction: column;
+	}
 
 	.feature_container {
 		display: flex;
@@ -34,10 +36,51 @@
 
 	.section_img {
 		width: 100%;
-        align-self: center;
-        max-width: 550px;
+		align-self: center;
+		max-width: 550px;
 		margin-top: 2em;
-        pointer-events: none;
+		pointer-events: none;
+	}
+
+	.gear_img {
+		position: absolute;
+		width: 70%;
+		max-width: 350px;
+		right: -30vw;
+		top: 35%;
+		opacity: 20%;
+		animation: rotate 60s infinite linear;
+		pointer-events: none;
+
+		@media (width >=450px) {
+			top: 30%;
+		}
+
+		@media (width >=500px) {
+			top: 20%;
+		}
+
+		@media (width >=768px) {
+			max-width: 400px;
+		}
+
+		@media (width >=992px) {
+			top: 25%;
+			right: auto;
+			left: -20vw;
+		}
+
+		@media (width >=1200px) {
+			top: 35%;
+			right: auto;
+			max-width: 450px;
+		}
+
+		@media (width >=1400px) {
+			top: 35%;
+			right: auto;
+			left: -15vw;
+		}
 	}
 }
 
@@ -57,20 +100,20 @@
 @media (width >= 992px) {
 	.offer {
 		.flex_box {
-            flex-direction: row;
+			flex-direction: row;
 			justify-content: space-between;
 			align-items: start;
-            max-width: 1110px;
+			max-width: 1110px;
 		}
 
-        .feature_container {
-            margin-top: 5em;
-        }
+		.feature_container {
+			margin-top: 5em;
+		}
 
 		.section_img {
 			width: 50%;
 			margin: 0;
-            margin-right: 5em;
+			margin-right: 5em;
 		}
 	}
 }

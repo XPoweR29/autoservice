@@ -9,6 +9,7 @@ import icon_experience from '../../assets/icons/feature_experience.svg';
 import icon_diagnostic from '../../assets/icons/feature_diagnostic.svg';
 import icon_time from '../../assets/icons/feature_fast.svg';
 import section_img from '../../assets/about_img.webp';
+import gear_img from '../../assets/img_gear.svg';
 
 export const About = () => {
 	return (
@@ -32,7 +33,8 @@ export const About = () => {
 
 					<Image className={styles.section_img} src={section_img} alt='' aria-hidden/>
 				</div>
-        
+
+				<Image className={styles.gear_img} src={gear_img} alt='' aria-hidden/>
 			</Wrapper>
 		</section>
 	);

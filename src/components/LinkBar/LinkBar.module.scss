@@ -1,7 +1,33 @@
+@use '../../sass/common' as *;
+
 .linkBar {
-    ul {
-        display: flex;
-        gap: 2em;
-        list-style: none;
-    }
+	ul {
+		display: flex;
+		gap: 2em;
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -5%;
+			top: 0;
+			height: 100%;
+			width: 0%;
+			background-color: $yellow;
+			clip-path: polygon(0 0, 89% 0%, 75% 100%, 0% 100%);
+			transition: width 0.2s;
+			z-index: -1;
+		}
+
+		&:hover {
+			&::before {
+				width: 140%;
+			}
+		}
+	}
 }
