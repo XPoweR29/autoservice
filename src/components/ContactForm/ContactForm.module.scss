@@ -5,11 +5,27 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1.5em;
+	gap: 1em;
 	width: 100%;
 	max-width: 510px;
 	padding-bottom: 1em;
 	margin-top: 5em;
+
+	.inputBox {
+		width: 100%;
+	}
+
+	.error {
+		margin-top: 3px;
+		min-height: 17px;
+		color: rgb(249, 68, 68);
+		font-size: 0.9em;
+		opacity: 0;
+
+		&--active {
+			opacity: 1;
+		}
+	}
 
 	input,
 	textarea {
@@ -30,6 +46,64 @@
 		height: 250px;
 	}
 
+	.conditions {
+		margin-top: -1.5em;
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1em;
+		}
+
+		input {
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			outline: none;
+			cursor: pointer;
+			width: 24px;
+			aspect-ratio: 1/1;
+			border: 2px solid $bg-dark;
+			border-radius: 4px;
+			display: inline-block;
+			position: relative;
+			background-color: transparent;
+
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+
+			&:checked {
+				background-color: transparent;
+				border-color: $yellow;
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 45%;
+					left: 25%;
+					width: 6px;
+					height: 12px;
+					border: solid $yellow;
+					border-width: 0 2px 2px 0;
+					transform: rotate(45deg) translate(-50%, -50%);
+				}
+			}
+		}
+
+		p {
+			font-size: 0.8em;
+			opacity: 0.8;
+
+			a {
+				text-decoration: underline;
+				color: $yellow;
+			}
+		}
+	}
+
 	button {
 		@include mainButton;
 		margin-top: 2em;
@@ -37,7 +111,7 @@
 	}
 }
 
-@media(width >= 576px) { 
+@media (width >= 576px) {
 	.form {
 		textarea {
 			height: 300px;
@@ -45,7 +119,7 @@
 	}
 }
 
-@media(width >= 992px) {
+@media (width >= 992px) {
 	.form {
 		margin: 0;
 		margin-top: 5em;

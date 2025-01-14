@@ -5,6 +5,8 @@ import styles from './MobileMenu.module.scss';
 import Link from 'next/link';
 import { AppContext } from '@/contexts/app.context';
 import { useBreakpoints } from '@/hooks/useBreakpoint';
+import gears from '../../assets/img_gears.svg';
+import Image from 'next/image';
 
 export const MobileMenu = () => {
 	const { breakpoint } = useBreakpoints();
@@ -46,6 +48,8 @@ export const MobileMenu = () => {
 							</Link>
 						</li>
 					</ul>
+
+					<Image className={styles.img_gears} src={gears} alt='' aria-hidden/>
 				</nav>
 			) : null}
 		</>

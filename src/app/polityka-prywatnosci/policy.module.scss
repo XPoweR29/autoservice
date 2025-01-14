@@ -1,0 +1,19 @@
+@use '../../sass/common' as *;
+
+.page {
+    padding: 7em 0;
+
+    h1 {
+        @include heading;
+        margin-bottom: 2em;
+    }
+
+    h2 {
+        // @include subheading;
+        margin: 1em 0;
+    }
+
+    li {
+        margin: 1em 0;
+    }
+}

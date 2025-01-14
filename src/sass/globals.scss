@@ -10,6 +10,12 @@ body {
 	font-size: 1.6rem;
 	min-width: 320px;
 	color: $dark;
+	background-color: $bg-white;
+
+	::selection {
+		background-color: $yellow;
+		color: $dark;
+	}
 
 	@media (min-width: 400px) {
 		font-size: 1.6rem;

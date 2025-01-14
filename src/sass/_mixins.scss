@@ -71,9 +71,17 @@
 	font-size: 1.1em;
 	text-transform: uppercase;
 	box-shadow: 7px 7px 0px 0px $yellow;
+	transition: box-shadow 0.3s, scale 0.3s;
+	scale: 1;
+	letter-spacing: normal;
 
 	img {
 		width: 1.5em;
+	}
+
+	&:hover {
+		box-shadow: 12px 12px 0px 0px $yellow;
+		scale: 1.05;
 	}
 }
 

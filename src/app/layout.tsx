@@ -3,6 +3,8 @@ import { Lato } from "next/font/google";
 import "../sass/globals.scss";
 import { ContextProvider } from "../contexts/app.context";
 import Head from "next/head";
+import { Header } from "@/sections/Header/Header";
+import { Footer } from "@/sections/Footer/Footer";
 
 const lato = Lato({
   subsets: ['latin'],
@@ -27,7 +29,9 @@ export default function RootLayout({
       
       <body className={lato.className}>
         <ContextProvider>
+          <Header/>
           {children}
+          <Footer/>
         </ContextProvider>
       </body>
     </html>
